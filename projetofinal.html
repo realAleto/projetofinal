@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&M Saúde</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="projetofinal.js"></script>
+    <link href="projetofinal.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+    <header>
+        <h1>Planos de Saúde A&M</h1>
+        <nav>
+            <a>O melhor lugar para achar o plano de saúde ideal para você.</a>
+            
+        </nav>
+
+    
+    </header>
+<br>
+<div class="container">
+    <h2>Utilize nossa calculadora de IMC e verifique se você está no peso ideal</h2>
+<form id="imcForm">
+    <label for="altura">Altura (metros):</label>
+    <input type="number" id="altura" step="0.01" placeholder="Insira a altura aqui" required>
+
+    <label for="peso">Peso (kg):</label>
+    <input type="number" id="peso" placeholder="Insira o peso aqui" required>
+    <button type="button" onclick="calcularIMC()" class="btn btn-primary">Calcular IMC</button>
+    
+</form>
+
+<p id="resultado"></p>
+
+<h2 id="tabela44" style="display: none;">Tabela de Classificação do IMC:</h2>
+<table id="tabela123" style="display:none;">
+    <thead>
+        <tr>
+            <th>IMC</th>
+            <th>Categoria de Peso</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Menos de 18.5</td>
+            <td>Abaixo do peso</td>
+        </tr>
+        <tr>
+            <td>18.5 - 24.9</td>
+            <td>Peso normal</td>
+        </tr>
+        <tr>
+            <td>25 - 29.9</td>
+            <td>Sobrepeso</td>
+        </tr>
+        <tr>
+            <td>30 - 34.9</td>
+            <td>Obesidade Grau 1</td>
+        </tr>
+        <tr>
+            <td>35 - 39.9</td>
+            <td>Obesidade Grau 2</td>
+        </tr>
+        <tr>
+            <td>40 ou mais</td>
+            <td>Obesidade Grau 3</td>
+        </tr>
+    </tbody>
+</table>
+
+</div>
+
+
+
+
+
+
+<div class="container my-container">
+
+
+
+<h1 id="titulo1">Nos ajude a achar o seu plano de saúde!</h1>
+
+    <form>
+        <label for="altura">Altura (metros):</label>
+        <input type="number" id="altura" placeholder="Insira a altura aqui" step="0.01" required>
+    
+        <label for="peso">Peso (kg):</label>
+        <input type="number" id="peso" placeholder="Insira o peso aqui" required>
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" placeholder="Insira a idade aqui"  step="0.01" required>
+        
+        <button type="button" onclick="calcular()" id="resultadoTabela" class="btn btn-primary">Achar plano ideal</button>
+        
+    </form>
+    <table id="tabela133" style="display: none;">
+        <thead>
+            <tr>
+                <th>Operadora</th>
+                <th>Plano Básico</th>
+                <th>Plano Standard</th>
+                <th>Plano Premium</th>
+            </tr>
+        </thead>
+        <tbody id="resultadoCorpo">
+            
+        </tbody>
+    </table>
+
+</div>
+
+    <footer>
+        <p>&copy; 2023 Planos de Saúde A&M. Todos os direitos reservados.</p>
+    </footer>
+
+
+</body>
+
+
+</html>
